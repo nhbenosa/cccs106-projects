@@ -1,0 +1,69 @@
+# CCCS 106 Projects
+Application Development and Emerging Technologies  
+Academic Year 2025-2026
+
+## Student Information
+- **Name:** Nhel Adam S. Benosa
+- **Student ID:** 231003282
+- **Program:** BSCS
+- **Section:** 3B
+
+
+### Module 6 Learning Task - Weather Application Enhancement
+- `mod6_labs/main.py` - Weather Application main file that builds the window and lay out the visible components
+- `mod6_labs/config.py` - Handles configuration management, including API keys, base URLs, and environment variable for the Weather Application.
+- `mod6_labs/weather_service.py` - Contains the service layer responsible for communicating with the OpenWeatherMap API to fetch current weather and forecast data, including error handling and async HTTP requests.
+- `mod6_labs/test_weather_service.py` - Unit test file that validates the functionality and reliability of the `WeatherService` class, ensuring correct API responses and proper error handling.
+
+
+### Features Enhancement Added in Weather Application
+1. Search History (Easy)
+-Store the last 5-10 searched cities 
+- Display them in a dropdown or list
+- Allow quick re-search by clicking on history items
+- Persist history using local file storage (json file)
+
+2. Temperature Unit Toggle (Easy)
+- Add a switch/button to toggle between Celsius and Fahrenheit
+- Convert and redisplay current weather data
+- Remember user's preference
+
+3. Weather Condition Icons and Colors (Easy)
+- Change background color based on weather conditions (sunny=yellow, rainy=blue, etc.)
+- Add custom icons or emojis for different weather types
+- Implement smooth color transitions
+
+4. Current Location Weather (Medium)
+- Use IP-based geolocation to detect user's city
+- Add a "My Location" button
+- Automatically fetch weather on app start
+
+
+## Technologies Used
+- **Python 3.8+** - Main programming language
+- **Flet 0.28.3** - GUI framework for cross-platform applications
+- **Git & GitHub** - Version control and collaboration
+- **VS Code** - Integrated development environment
+
+## Development Environment
+- **Virtual Environment:** cccs106_env
+- **Python Packages:** flet==0.28.3
+- **Platform:** Windows 10/11
+
+## How to Run Applications
+
+### Prerequisites
+1. Python 3.8+ installed
+2. Virtual environment activated: `venv\Scripts\activate`
+3. Flet installed: `pip install flet==0.28.3`
+
+### Running GUI Applications
+```cmd
+# Navigate to project directory
+cd mod6_labs
+
+### Run applications
+main.py
+weather_service.py
+config.py
+test_weather_service.py
